@@ -19,11 +19,12 @@ ITERATIONS = 10000
 Functions
 
 """
+# Returns calculation time
 def get_time(device: str, dimension: int) -> float:
     x = torch.rand(dimension, dimension, device=torch.device(device))
     start = time()
 
-    for i in range(ITERATIONS):
+    for _ in range(ITERATIONS):
         x += x
 
     end = time()
