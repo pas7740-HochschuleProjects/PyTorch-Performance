@@ -7,12 +7,16 @@ import torch
 from time import time
 from argparse import ArgumentParser
 
+
+
 """
 
 Constants
 
 """
 ITERATIONS = 10000
+
+
 
 """
 
@@ -29,6 +33,9 @@ def get_time(device: str, dimension: int) -> float:
 
     end = time()
     return end - start
+
+
+
 """
 
 Main Function
